@@ -23,7 +23,7 @@ export default function Article() {
               </h2>
 
               <p className="p">
-                Hello, noob developer. I am Shubham Raj another noob developer.
+{`                Hello, noob developer. I am Shubham Raj another noob developer.
                 I think we are here to know about the funny history of
                 JavaScript "off-course because as the title say's" But before
                 start discussing the topic let me tell you something about
@@ -60,7 +60,7 @@ export default function Article() {
                 ecmascript.jpg At the same time internet growing like crazy
                 people realized they need standardized Javascript. So the
                 language was submitted to an independent organization called
-                ECMA, which in 1997 released ECMAScript one or ES1. This was the
+                ECMA, which in 1997 released ECMAScript one or ES1. This was the`}
               </p>
             </div>
           </div>

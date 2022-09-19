@@ -1,48 +1,18 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Nav() {
   const router = useRouter();
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
   const [address, setAddress] = useState();
-
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 70) ||
-        currentScrollPos < 10
-    );
-
-    setPrevScrollPos(currentScrollPos);
-  };
 
   const loginMeta = () => {
     // metamask login
   }
 
-  // new useEffect:
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    // if (address) {
-    //   router.push({
-    //     pathname: "/nft-communities",
-    //     query: {
-    //       address,
-    //     },
-    //   });
-    // }
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
-
   return (
-    <div className={`nav box ${visible && `nav-blured-bg`}`}>
+    <div className={`nav box`}>
       <Container fluid className="cont">
         <Row className="nav__row">
           <Col md={2} className="nav__logo">
