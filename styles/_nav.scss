@@ -1,7 +1,8 @@
 .nav {
     width: 98%;
     padding: 30px;
-    backdrop-filter: blur(5px);
+    background-color: #ffffff;
+    filter: opacity(50%);
 
     position: fixed;
     z-index: 10;

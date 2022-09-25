@@ -5,7 +5,8 @@
     padding: 150px;
 
     .box {
-        backdrop-filter: blur(5px);
+        background-color: #ffffff;
+        filter: opacity(50%);
     }
 
     .heading{
