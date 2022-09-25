@@ -24,7 +24,8 @@
     }
 
     &__box{
-        backdrop-filter: blur(5px);
+        background-color: #ffffff;
+        filter: opacity(50%);
     }
     &__heading{
         padding: 50px;
