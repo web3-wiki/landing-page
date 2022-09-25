@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import NewArticle from "../components/NewArticle";
 
 export default function Home() {
+
   return (
     <div>
       <Head>
@@ -12,7 +13,7 @@ export default function Home() {
 
       <Nav />
 
-      <NewArticle/>
+      <NewArticle />
     </div>
   );
 }
